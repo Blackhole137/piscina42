@@ -17,3 +17,16 @@ void ft_putnbr(int nb)
     char digit = (nb % 10) + '0';
     write(1, &digit, 1);
 }
+
+int main(void)
+{
+    ft_putnbr(-2147483648);
+    write(1, "\n", 1);
+    ft_putnbr(-12345);
+    write(1, "\n", 1);
+    ft_putnbr(0);
+    write(1, "\n", 1);
+    ft_putnbr(67890);
+    write(1, "\n", 1);
+    return (0);
+}
